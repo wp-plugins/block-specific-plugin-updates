@@ -16,6 +16,8 @@ You can select the plugins you want to block for updates from Block Plugin Updat
 
 Please report any bugs @ http://dineshkarki.com.np/plugins/block-specific-plugin-updates/report-bugs.
 
+Thanks to <a href="http://wework4web.com" target="_blank">wework4web</a> for supporting plugin developement.
+
 == Installation ==
 
 1. Upload the plugin files to the `/wp-content/plugins/` directory
