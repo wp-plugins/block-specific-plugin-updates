@@ -31,12 +31,22 @@ function bpu_settings_page() {
 	$plugins = get_plugins ();
 ?>
 <style>input.space-right{margin-right:30px;}</style>
+<div class="support_education wrap" style="width:250px; line-height:2.0; position:fixed; right:0;">
+<h3>Educate a Child</h3>
+We are sponsoring education for poor children. Donate and help us raise fund for them. For more details click <a href="http://dineshkarki.com.np/educate-child" target="_blank">here</a>
+<br /><br />
+<div align="center">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="GNJJ22PDAAX48">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div>
+</div>
+
 <div class="wrap">
 <h2>Block Specific Plugin Update</h2>
-<br/>
-<div style="-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; border:1px solid #e9e9e9; padding:10px;-webkit-box-shadow: 0px 0px 1px 2px #969696;-moz-box-shadow: 0px 0px 1px 2px #969696;box-shadow: 0px 0px 1px 2px #969696; text-align:center; font-size:14px;"> 
-<em><b>This Plugin is FREE and always will be. Support this plugin by <a href="http://dineshkarki.com.np/donate" target="_blank">DONATING</a>. Any Amount is Appreciated.</b></em>
-</div>
 
 <?php if ($updated){ ?>
 	<br />
