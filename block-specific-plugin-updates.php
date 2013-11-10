@@ -1,10 +1,10 @@
 <?php
 /* 
 Plugin Name: Block Specific Plugin Updates
-Plugin URI: http://dineshkarki.com.np/plugins/block-specific-plugin-updates
+Plugin URI: http://dineshkarki.com.np/block-specific-plugin-updates
 Description: This plugin blocks the updates for specific plugins. You can select the plugins from plugin setting page.
 Author: Dinesh Karki
-Version: 0.1
+Version: 1.0
 Author URI: http://www.dineshkarki.com.np
 */
 
@@ -26,16 +26,18 @@ Author URI: http://www.dineshkarki.com.np
 
 add_filter( 'http_request_args', 'bpu_prevent_update_check',10, 2 );
 function bpu_prevent_update_check( $r, $url ) {
-	if ( 0 === strpos( $url, 'http://api.wordpress.org/plugins/update-check/' ) ) {
+	if ( 0 === strpos( $url, 'https://api.wordpress.org/plugins/update-check/1.1/' ) ) {
 		$bpu_update_blocked_plugins 		= get_option('bpu_update_blocked_plugins');
 		$bpu_update_blocked_plugins_array	= @explode('###',$bpu_update_blocked_plugins);		
 		if (!empty($bpu_update_blocked_plugins_array)){
 			foreach ($bpu_update_blocked_plugins_array as $my_plugin){
-				$plugins = unserialize( $r['body']['plugins'] );
-				unset( $plugins->plugins[$my_plugin] );
-				unset( $plugins->active[array_search( $my_plugin,
-						   $plugins->active )] );
-				$r['body']['plugins'] = serialize( $plugins );
+				$plugins = json_decode($r['body']['plugins'], true);
+				
+				if (array_key_exists($my_plugin, $plugins['plugins'])){
+					unset($plugins['plugins'][$my_plugin]);
+				}
+				
+				$r['body']['plugins'] = json_encode( $plugins );
 			}
 		}
 	}

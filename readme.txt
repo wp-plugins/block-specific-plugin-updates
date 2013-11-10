@@ -1,10 +1,10 @@
-=== Block Specific Plugin Updates ===
+=== Block Plugin Update ===
 Contributors: dnesscarkey
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TYPYWFP6P2KQJ
-Tags: plugin, updates, block
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NX89F5F93YTZJ
+Tags: block plugin update, block specific plugin update, disable plugin update, hide plugin update notification, plugin update hider, hide plugin update notification.
 Requires at least: 3.0.
-Tested up to: 3.3.1
-Stable tag: 0.1
+Tested up to: 3.7.1
+Stable tag: 1.0
 
 This plugin blocks updates for specific plugin.
 
@@ -12,9 +12,11 @@ This plugin blocks updates for specific plugin.
 
 This Plugin blocks updates from a specific plugin.
 
-You can select the plugins you want to block for updates from Block Plugin Update under Settings
+You can select the plugins you want to block for updates from Block Plugin Update under Settings or tick them all to remove all plugin updates.
 
-Please report any bugs @ http://dineshkarki.com.np/plugins/block-specific-plugin-updates/report-bugs.
+If you still any problem visit our <a href="http://dineshkarki.com.np/forums/forum/block-plugin-updates" target="_blank">support forum</a> or you can write to us directly using our contact form.
+
+Note: Issues posted here aren't monitored. Please visit our <a href="http://dineshkarki.com.np/forums/forum/block-plugin-updates" target="_blank">support forum</a>.
 
 Thanks to <a href="http://wework4web.com" target="_blank">wework4web</a> for supporting plugin developement.
 
@@ -35,6 +37,9 @@ You need to logout and login to get the proper effect.
 1. Admin Setting
 
 == Changelog ==
+
+= 1.0 =
+* Supports now wordpress 3.7
 
 = 0.1 =
 * First Release
