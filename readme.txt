@@ -3,8 +3,8 @@ Contributors: dnesscarkey
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NX89F5F93YTZJ
 Tags: block plugin update, block specific plugin update, disable plugin update, hide plugin update notification, plugin update hider, hide plugin update notification.
 Requires at least: 3.0.
-Tested up to: 3.7.1
-Stable tag: 1.0
+Tested up to: 4.1.1
+Stable tag: 2.0
 
 This plugin blocks updates for specific plugin.
 
@@ -37,6 +37,9 @@ You need to logout and login to get the proper effect.
 1. Admin Setting
 
 == Changelog ==
+
+= 2.0 =
+* Tested with 4.1.1
 
 = 1.0 =
 * Supports now wordpress 3.7
